@@ -1,0 +1,508 @@
+
+
+.spotify-player {
+    background: #121212;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 400px;
+    margin: 30px auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.spotify-player h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.cover {
+    background: #1db954;
+    height: 120px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#visualizer {
+    display: flex;
+    gap: 3px;
+    margin-bottom: 10px;
+}
+
+#visualizer span {
+    width: 4px;
+    background: white;
+    animation: bounce 1s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0%,100% { height: 10px; }
+    50% { height: 40px; }
+}
+
+.track-info {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.controls {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.controls button {
+    background: #1db954;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background: #17a44b;
+}
+
+#playlist {
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#playlist li {
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: 1px solid #333;
+}
+
+#playlist li:hover {
+    background: #1db954;
+}
+
+
+
+
+/* ================================== */
+/* HERO TECH FUTURISTA */
+/* ================================== */
+
+/* Fondo general oscuro */
+#index {
+    background-color: #0f0f1a; /* Azul oscuro */
+    height: 100vh; /* Altura completa pantalla */
+    overflow: hidden;
+}
+
+/* Contenedor izquierdo */
+#index_left {
+    position: relative;
+    height: 100vh;
+    padding: 0;
+}
+
+/* Video ocupa todo el espacio */
+.hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Se comporta como background */
+}
+
+/* Overlay oscuro con tono azul */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        135deg,
+        rgba(0,0,0,0.7),
+        rgba(0, 255, 255, 0.2)
+    );
+}
+
+/* Contenido derecho */
+.hero-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+}
+
+/* Título principal con glow */
+.brand-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff, 
+                 0 0 20px #00ffff,
+                 0 0 40px #00ffff;
+}
+
+/* Logo tamaño */
+.logo-img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+/* Texto descriptivo */
+.home-description {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #cccccc;
+}
+
+/* Botón estilo futurista */
+.btn-futurista {
+    background: transparent;
+    border: 2px solid #00ffff;
+    color: #00ffff;
+    margin: 10px 0;
+    padding: 10px 20px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Efecto hover neón */
+.btn-futurista:hover {
+    background: #00ffff;
+    color: #000;
+    box-shadow: 0 0 15px #00ffff,
+                0 0 30px #00ffff;
+}
+
+/* Iconos sociales */
+.social i {
+    font-size: 22px;
+    margin-top: 20px;
+    color: #00ffff;
+    transition: 0.3s;
+}
+
+.social i:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+
+body{
+	background-color: #f9f9f9;
+	font-family: "Crimson Text";
+}
+
+.main{
+	background: #fff;
+}
+
+.home-description{
+	font-style: italic;
+	font-weight: 600;
+	font-family: "Crimson";
+	font-size: 19px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    line-height: 29px;
+
+}
+
+.social a i{
+	height: 40px;
+	width: 40px;
+	border: 1px solid #111;
+	line-height: 40px;
+	margin: 0 10px;
+	color: #111;
+	font-size: 20px;
+	padding-bottom: 20px;
+	}
+
+.social a:hover i{
+	color: #fff;
+	border-color: #bb9e7d;
+	background-color: #bb9e7d;
+	}
+
+
+@media (min-width: 778px)
+{
+		.main{
+			height: 100vh;
+			overflow: hidden;
+		}
+
+		.img-rabbit{
+			/*margin: 0 -15px;*/
+		}
+
+		.btn-group-vertical{
+    		padding: 20px 87.5px;
+    	}
+
+    	.info{
+			font-family: "Crimson";
+			line-height: 28px;
+		    font-size: 16px;
+		    padding-top: 15px;
+		    padding-right: 50px;
+		}
+		
+		.home-description{
+			padding-right: 90px;
+			padding-left: 90px;
+			
+		}
+}
+.img-rabbit{
+	width: 100%;
+}
+.btn-rabbit{
+	background-color: #fff;
+	color: #111;
+	font-style: italic;
+	border: 1px solid #111;
+	border-radius: 0px !important;
+	transition: all 0.4s ease-in-out;
+	margin-bottom: 20px;
+	font-family: "Crimson";
+	font-size: 13px;
+	}
+
+.btn-rabbit:hover{
+	color: #fff;
+	background-color: #bb9e7d;
+	border-color: #bb9e7d;}
+
+p{
+	color: #585757;
+	font-size: 16px;
+	
+}
+
+.page-title{
+	text-transform: uppercase;
+	font-family: 'Josefin Sans';
+}
+
+/*Home Style*/
+.logo{
+	padding-top: 100px;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.logo h4{
+	font-family: 'Josefin Sans';
+}
+
+
+footer{
+	padding: 22px 0 10px 0;
+	font-style: italic;
+	}
+
+
+.back{
+    width: 170px;    
+    font-family: "Crimson";
+    font-size: 17px;
+    font-style: italic;
+    vertical-align: middle;
+    text-align: center;
+    display: block;
+    clear: both;
+    margin-top: 70px;	 
+}
+
+.back i{
+	margin-left: -40px;
+    margin-right: 17px;
+    font-size: 20px;
+}
+
+
+.form-control{
+	margin-top: 30px;
+	width: 75%;
+
+}
+
+.btn{
+	padding: 10px 60px;
+	height: 45px;
+	font-size: 16px;
+}
+
+.btn-group-vertical{
+    font-family: "Josefin Sans";    
+}
+
+.about{
+	font-family: "Josefin Sans";
+	/*margin-top: 35px;*/
+	/*margin-bottom: 25px;*/
+	font-size: 32px;
+	
+}
+.form-control{
+	font-style: italic;
+	border-radius: 0;
+	font-family: "Crimson";
+	font-size: 16px;
+}
+
+.page-title{
+	
+	font-size: 32px;
+	font-family: "Josefin Sans";
+}
+
+.fa-heartbeat{
+	    color: #bb9e7d;
+}
+
+::selection {
+	color: #fff;
+   	background-color: #bb9e7d;
+}
+
+.bottom{
+	padding-right: 20px;
+}
+
+.page-title{
+	position: relative;
+	display: inline-block;
+}
+
+.page-title:after,.page-title:before{
+	content: '';
+	position: absolute;
+	height: 1px;
+	background-color: black;
+	left: 0;
+	margin: 2px;
+}
+
+.social{
+	padding-bottom: 15px;
+}
+
+.submit{
+
+	font-family: "Crimson"
+	font-size: 16px;
+}
+
+.subtitle{
+	font-style: italic;
+	font-weight: 600;
+	font-size: 20px;
+	color: #3b3b3b;
+	line-height: 28px;
+	font-family: "Crimson";
+	margin-top: 15px;
+	margin-bottom: 20px;
+	padding-right: 40px;
+
+	}
+.page-title:after{
+	width: 75%;
+	top: -9px;
+
+}
+
+.page-title:before{
+	width: 40%;
+	bottom: -7px;
+}
+
+#watermark .marker{
+	position: absolute;
+	font-size: 60px;
+	opacity: 0.1;
+	font-family: "Josefin Sans";
+	text-transform: uppercase;
+	left: 0;
+	top: -5px;
+}
+
+#watermark{
+	position: relative;
+}
+
+.item{
+	
+	background-color: #313131;
+	color: #f9f9f9;
+}
+
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+    /*margin-left: 0px;*/
+}
+
+.owl-theme .owl-controls {
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: calc(44% - 40px);
+		}
+
+.owl-next{
+	right: 0;
+	padding-right: 1px;
+
+}
+
+.owl-prev{
+	left: 0;
+	padding-left: 1px;
+}
+
+
+
+.owl-theme .owl-controls .owl-nav [class*=owl-]{
+	position: absolute;
+	border-radius: 0px;
+	font-size: 21px;
+	padding: 15px 20px;
+	margin: 0px;
+	background-color: #fff; 
+
+}
+
+.owl-theme .owl-controls .owl-nav [class*=owl-] i{
+	color: #333;
+	
+}
+
+.owl-theme .owl-controls .owl-nav [class*=owl-]:hover{
+	background-color: #bb9e7d;
+	border-color: #bb9e7d;
+}
+.owl-theme .owl-controls .owl-nav [class*=owl-]:hover i{
+	color: #fff;
+}
+@media (max-width: 1024px) and (orientation: landscape){
+	.main{
+		height: auto;
+	}
+}
+.custom_btn{
+  -vendor-animation-duration: 3s;
+  -vendor-animation-delay: 2s;
+  -vendor-animation-iteration-count: infinite;
+}
+.show{
+	display: block;
+}
