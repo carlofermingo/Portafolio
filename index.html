@@ -1,158 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Especializado en automatización y soluciones digitales.">
+<meta name="keywords" content="Tics, datos abiertos, recopilaciones digitales ,automatizacion">
+<meta name="author" content="Dev TICs">
 
-        <title></title>
-        <link rel="icon" type="image/icon" href="img/tabicon.ico">
+<!-- Open Graph -->
+<meta property="og:title" content="Dev TICs">
+<meta property="og:description" content="Especializado en automatización y soluciones digitales.">
+<meta property="og:image" content="assets/images/logo.png">
+<meta property="og:type" content="website">
 
-        <link rel="stylesheet" type="text/css" href="">
-        <link href="bootstrap.min.css" rel="stylesheet">
-        <link href="bootstrap-theme.min.css" rel="stylesheet">
-        <link href="font-awesome.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700,700i|Josefin+Sans:700" rel="stylesheet">
-        <link href="main.css" rel="stylesheet">
-        <link rel="icon" href="img/logo.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-		
-		<!-- Incluimos los archivos CSS de Bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-	<!-- Incluimos los archivos JS de Bootstrap -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<title>Art Minfer | Bio Digital</title>
 
-    </head>
+<link rel="icon" href="assets/images/logo.png">
 
-    <body>
-        <div id="index">                                           <!-- Index starts here -->
-            <div class="container main">
-                <div class="row home">
-                    <div id="index_left" class="col-md-6 left">
-						<video class="img-responsive img-rabbit" autoplay muted loop playsinline>
-						<source src="home.mp4" type="video/mp4">
-						Tu navegador no soporta video HTML5.
-						</video>
+<style>
+:root{
+--bg:#0f0f12;
+--card:#1a1a20;
+--accent:#6c5ce7;
+--text:#ffffff;
+--soft:#b2b2b2;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+}
+
+body{
+background:var(--bg);
+color:var(--text);
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:20px;
+}
+
+.container{
+width:100%;
+max-width:420px;
+text-align:center;
+animation:fade 0.8s ease;
+}
+
+img.profile{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:20px;
+border:3px solid var(--accent);
+}
+
+h1{
+font-size:1.6rem;
+margin-bottom:8px;
+}
+
+p.bio{
+font-size:0.95rem;
+color:var(--soft);
+margin-bottom:25px;
+}
+
+.link{
+display:block;
+background:var(--card);
+padding:14px;
+margin-bottom:12px;
+border-radius:10px;
+text-decoration:none;
+color:var(--text);
+font-weight:600;
+transition:0.2s;
+border:1px solid #2a2a30;
+}
+
+.link:hover{
+background:var(--accent);
+transform:translateY(-2px);
+}
+
+.social{
+margin-top:20px;
+font-size:0.9rem;
+color:var(--soft);
+}
+
+.social a{
+color:var(--soft);
+text-decoration:none;
+margin:0 8px;
+}
+
+footer{
+margin-top:25px;
+font-size:0.75rem;
+color:#555;
+}
+
+@keyframes fade{
+from{opacity:0;transform:translateY(10px);}
+to{opacity:1;transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<main class="container">
+
+<img src="assets/images/logo.png" alt="Art Minfer" class="profile" loading="lazy">
+
+<h1>Dev TICs</h1>
+
+<p class="bio">
+Especializado en automatización y soluciones digitales.
+</p>
+
+<a href="#" class="link">Servicios</a>
+<a href="#" class="link">Recopilaciones Digitales</a>
+<a href="#" class="link">Excentricidad Digital</a>
+
+<div class="social">
+<a href="#">Pinterest</a> · 
+<a href="#">Twitter</a> · 
+<a href="#">LinkedIn</a>
 </div>
-                    <div id = "index_right" class="col-md-6 text-center right">
-                        <div class="logo">
-                            <img src="img/logo.png">
-                            <h4>Dev TICs</h4>
-                        </div>
-                        <p class="home-description">
-                            Especializado en automatización y soluciones digitales.
-							
-							
-							
-                        </p>
-                        <div class="btn-group-vertical custom_btn animated slideinright">
-                            <div id="about" class="btn btn-rabbit">Tools</div>
-                            <div id="work" class="btn btn-rabbit">Source Code</div>
-                           
-                        </div>      
-                        <div class="social">
-                            <a href="https://www.facebook.com/profile.php?id=61584738817078" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>               
-            </div>
-        </div>                                                      <!-- index ends here -->
 
-        <div id="about_scroll" class="pages ">                      <!-- about strats here  -->
-            <div class="container main">
-                <div class="row">
-                    <div class="col-md-6 left" id="about_left">
-                        <img class="img-responsive img-rabbit" src="img/about.jpg">
-                    </div>
+<footer>
+© 2026 Dev TICs
+</footer>
 
-                    <div class="col-md-6 right" id="about_right">
-                        <a href="#index" class="btn btn-rabbit back"> <i class="fa fa-angle-left" aria-hidden="true"></i> Home</a>
-                        <div id="watermark">
-                            <h2 class="page-title" text-center>Servicios</h2>
-                            <div class="marker">a</div>
-                        </div>
-                        <p class="subtitle">""</p> 
-							<ul>						
-								<li class="page-title">...</li>
-							</ul>						
-                    </div>
-                </div>
-            </div>            
-        </div>                                                                <!-- About ends here -->
+</main>
 
-
-        
-        <div id="work_scroll" class="pages">                                  <!-- Work starts here -->
-            <div class="container main">
-                <div class="row">
-                    <div class="col-md-6" id="work_left">
-                        <div id="owl-demo" class="owl-carousel owl-theme">
-                            <div class="item"><img class="img-responsive img-rabbit" src="img/work.jpg"></div>
-                            <div class="item"><img class="img-responsive img-rabbit" src="img/home.jpg"></div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6" id="work_right">
-                        <a href="#index" class="btn btn-rabbit back"> <i class="fa fa-angle-left" aria-hidden="true"></i> Back to Home </a>
-                        <div id="watermark">
-                            <h2 class="page-title" text-center>...</h2>
-                            <div class="marker">DOWNLOAD</div>
-                        </div>
-
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
-		<div style="width: 100%; height: 80%;">
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-				<!-- Indicadores del carrusel -->
-				<ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
-				</ol>
-
-				<!-- Slides del carrusel -->
-				<div class="carousel-inner">
-					<div class="item active">
-						<a href="https://www.gooogle.com" target="_blank">
-							<img src="img/demo2.jpg" alt="Imagen 1">
-						</a>
-
-					</div>
-					<div class="item">
-						<img src="img/demo3.jpg" alt="Imagen 2">
-					</div>
-					
-				</div>
-
-				<!-- Controles del carrusel -->
-				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left"></span>
-					<span class="sr-only">Anterior</span>
-				</a>
-				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right"></span>
-					<span class="sr-only">Siguiente</span>
-				</a>
-			</div>
-		</div>
-	</div>
-
-
-
-
-                    </div>
-                </div>
-            </div>    
-        </div>                                                                 <!-- Work ends here  -->
-
-
-                                   <!-- Contact ends here -->
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="bootstrap.min.js"></script>
-        <script src="script.js"></script>
-    </body>
+</body>
 </html>
+
